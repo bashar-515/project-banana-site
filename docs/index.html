@@ -30,11 +30,10 @@
       efficiently form a peer-to-peer connection between clients. The backend
       consists of a Go server listening for ICE candidates and session
       descriptions via gRPC—forwarding them to peers over a WebSocket
-      connection. It sits behind an Nginx reverse proxy that doubles as a static
-      file server. The entire setup is deployed in Docker containers and runs on
+      connection. The entire setup is deployed on Docker containers and runs on
       a Raspberry Pi located in my bedroom, and I'm using
       <a href="https://www.noip.com">No-IP</a> to manage my dynamic IP address.
-      Check out the source code
+      The app's frontend is served using GitHub Pages. Check out the source code
       <a href="https://github.com/bashar-515/project-banana" target="_blank"
         >here</a
       >.
